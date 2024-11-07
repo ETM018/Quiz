@@ -1,0 +1,56 @@
+/* Styles de la carte de résultat */
+.result-container {
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc); /* Dégradé bleu clair */
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 450px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Ombre douce */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .result-container:hover {
+    transform: translateY(-5px); /* Animation de survol */
+  }
+  
+  .result-header {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00796b; /* Couleur d'accent vert foncé */
+    margin-bottom: 18px;
+  }
+  
+  .result-score {
+    font-size: 22px;
+    font-weight: bold;
+    animation: fadeIn 1s ease; /* Animation d'apparition */
+  }
+  
+  .text-green {
+    color: #388e3c; /* Vert réussite plus vif */
+  }
+  
+  .text-red {
+    color: #d32f2f; /* Rouge échec plus vif */
+  }
+  
+  .result-message {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #555; /* Couleur douce pour le texte */
+    animation: popIn 0.5s ease; /* Animation de message */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  

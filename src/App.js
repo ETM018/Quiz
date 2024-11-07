@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react'; // Assure-toi que useState est bien importé
 import './App.css';
+import Home from './component/quiz/quizhome';
+import Quiz from './component/quiz/quiz';
+import Result from './component/quiz/quizresult';
 
 function App() {
+  const [currentView, setCurrentView] = useState('home'); // State pour gérer la vue actuelle
+  const [selectedModule, setSelectedModule] = useState(''); // State pour stocker le module sélectionné
+  const [score, setScore] = useState(0); // State pour suivre le score
+  const [totalQuestions, setTotalQuestions] = useState(0); // State pour suivre le nombre de questions
+
+  const handleModuleSelect = (module) => {
+    setSelectedModule(module); // Définir le module sélectionné
+    setCurrentView('quiz'); // Passer à la vue "quiz"
+  };
+
+  const handleQuizFinish = (finalScore, total) => {
+    setScore(finalScore); 
+    setTotalQuestions(total); 
+    setCurrentView('result'); // Passer à la vue "resultat"
+  };
+
+  const renderView = () => {
+    switch (currentView) {
+      case 'home':
+        return <Home onModuleSelect={handleModuleSelect} />;
+      case 'quiz':
+        return <Quiz module={selectedModule} onQuizFinish={handleQuizFinish} />;
+      case 'result':
+        return <Result score={score} totalQuestions={totalQuestions} />;
+      default:
+        return <Home onModuleSelect={handleModuleSelect} />;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {renderView()}
     </div>
   );
 }

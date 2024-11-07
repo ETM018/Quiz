@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #007BFF; 
+            padding: 10px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1; 
+            justify-content: flex-start; 
+        }
+        .nav-item {
+            margin-right: 20px;
+        }
+        .nav-item a {
+            text-decoration: none;
+            color: white; 
+            transition: color 0.3s;
+        }
+        .nav-item a:hover {
+            color: #FFC107; 
+        }
+        .auth-button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #28A745; 
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .auth-button:hover {
+            background-color: #218838; 
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Header extends React.Component {
+            render() {
+                return (
+                    <div className="navbar">
+                        <nav>
+                            <ul className="nav-links">
+                                {this.props.Element.map((Elems, index) => (
+                                    <li className="nav-item" key={index}>
+                                        <a href="#">{Elems}</a>
+                                    </li>
+                                ))}
+                                <li>
+                                    <button className="auth-button">
+                                        {this.props.isAuthentifie ? 'Logout' : 'Login'}
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <Header
+                Element={['Home', 'Company', 'About', 'Contact','contact us','FAQ']}
+                isAuthentifie={true}
+            />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>

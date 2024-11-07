@@ -1,0 +1,552 @@
+{
+    "react": [
+      {
+        "question": "Qu'est-ce que React ?",
+        "answers": [
+          { "text": "Un langage de programmation créé par Google", "isCorrect": false },
+          { "text": "Un framework CSS pour le développement web", "isCorrect": false },
+          { "text": "Une bibliothèque JavaScript pour construire des interfaces utilisateur", "isCorrect": true },
+          { "text": "Un éditeur de texte pour écrire du code", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Qui a développé React ?",
+        "answers": [
+          { "text": "Google", "isCorrect": false },
+          { "text": "Facebook", "isCorrect": true },
+          { "text": "Microsoft", "isCorrect": false },
+          { "text": "Twitter", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quelle commande est utilisée pour créer un nouveau projet React ?",
+        "answers": [
+          { "text": "npm start", "isCorrect": false },
+          { "text": "npx create-react-app", "isCorrect": true },
+          { "text": "react-create-project", "isCorrect": false },
+          { "text": "npm create-react-app", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quel hook permet d'ajouter un état à un composant fonctionnel ?",
+        "answers": [
+          { "text": "useState", "isCorrect": true },
+          { "text": "useEffect", "isCorrect": false },
+          { "text": "useContext", "isCorrect": false },
+          { "text": "useReducer", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "À quoi sert JSX dans React ?",
+        "answers": [
+          { "text": "Un outil de transpilation JavaScript", "isCorrect": false },
+          { "text": "Un langage de style CSS", "isCorrect": false },
+          { "text": "Une syntaxe permettant d'écrire du HTML dans du JavaScript", "isCorrect": true },
+          { "text": "Une bibliothèque pour les animations", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quel est le rôle de useEffect ?",
+        "answers": [
+          { "text": "Il permet de gérer le cycle de vie d'un composant", "isCorrect": true },
+          { "text": "Il permet de gérer les états", "isCorrect": false },
+          { "text": "Il permet de gérer le routage", "isCorrect": false },
+          { "text": "Il permet de gérer le contexte global", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Que signifie SPA dans le contexte de React ?",
+        "answers": [
+          { "text": "Single Page Application", "isCorrect": true },
+          { "text": "Server Page Application", "isCorrect": false },
+          { "text": "Simple Page Application", "isCorrect": false },
+          { "text": "Small Page Application", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quel hook permet de gérer un état global dans une application React ?",
+        "answers": [
+          { "text": "useState", "isCorrect": false },
+          { "text": "useContext", "isCorrect": true },
+          { "text": "useEffect", "isCorrect": false },
+          { "text": "useRef", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Que fait la méthode setState dans un composant de classe ?",
+        "answers": [
+          { "text": "Elle met à jour l'état et re-render le composant", "isCorrect": true },
+          { "text": "Elle met à jour l'état sans re-render", "isCorrect": false },
+          { "text": "Elle modifie directement l'état", "isCorrect": false },
+          { "text": "Elle désactive l'état", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quel outil permet de gérer le routage dans une application React ?",
+        "answers": [
+          { "text": "React Router", "isCorrect": true },
+          { "text": "Redux", "isCorrect": false },
+          { "text": "MobX", "isCorrect": false },
+          { "text": "React Link", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Comment importe-t-on un composant dans React ?",
+        "answers": [
+          { "text": "import { MyComponent } from './MyComponent'", "isCorrect": true },
+          { "text": "require('./MyComponent')", "isCorrect": false },
+          { "text": "include('./MyComponent')", "isCorrect": false },
+          { "text": "load('./MyComponent')", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un fragment en React ?",
+        "answers": [
+          { "text": "Un outil pour gérer le routage", "isCorrect": false },
+          { "text": "Un outil pour retourner plusieurs éléments sans ajouter de nœud DOM supplémentaire", "isCorrect": true },
+          { "text": "Un outil pour gérer le contexte", "isCorrect": false },
+          { "text": "Un outil pour gérer les erreurs", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "À quoi sert le hook useRef dans React ?",
+        "answers": [
+          { "text": "À accéder à un élément DOM directement", "isCorrect": true },
+          { "text": "À gérer l'état", "isCorrect": false },
+          { "text": "À gérer le cycle de vie", "isCorrect": false },
+          { "text": "À gérer le contexte", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quelle est la différence entre un composant de classe et un composant fonctionnel ?",
+        "answers": [
+          { "text": "Les composants de classe peuvent avoir des états et des méthodes de cycle de vie", "isCorrect": true },
+          { "text": "Les composants fonctionnels sont plus lents", "isCorrect": false },
+          { "text": "Les composants de classe ne peuvent pas utiliser les hooks", "isCorrect": false },
+          { "text": "Les composants fonctionnels doivent être utilisés avec Redux", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quelle méthode du cycle de vie est appelée après le premier rendu ?",
+        "answers": [
+          { "text": "componentDidMount", "isCorrect": true },
+          { "text": "componentWillMount", "isCorrect": false },
+          { "text": "componentDidUpdate", "isCorrect": false },
+          { "text": "componentWillUnmount", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Comment peut-on optimiser le re-rendu des composants en React ?",
+        "answers": [
+          { "text": "En utilisant shouldComponentUpdate dans les composants de classe", "isCorrect": true },
+          { "text": "En évitant d'utiliser JSX", "isCorrect": false },
+          { "text": "En utilisant uniquement des composants de fonction", "isCorrect": false },
+          { "text": "En évitant les états", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que Redux dans l'écosystème React ?",
+        "answers": [
+          { "text": "Un outil de routage", "isCorrect": false },
+          { "text": "Une bibliothèque de gestion d'état global", "isCorrect": true },
+          { "text": "Un outil de gestion de composants", "isCorrect": false },
+          { "text": "Un outil de mise en page", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Que signifie 'props' dans React ?",
+        "answers": [
+          { "text": "Les propriétés passées aux composants", "isCorrect": true },
+          { "text": "Les méthodes d'un composant", "isCorrect": false },
+          { "text": "Les états internes d'un composant", "isCorrect": false },
+          { "text": "Les évènements déclenchés par un composant", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quel hook permet de mémoriser une valeur entre les rendus sans la recalculer ?",
+        "answers": [
+          { "text": "useMemo", "isCorrect": true },
+          { "text": "useEffect", "isCorrect": false },
+          { "text": "useState", "isCorrect": false },
+          { "text": "useRef", "isCorrect": false }
+        ]
+      }
+    ,
+
+
+
+    
+        
+          {
+            "question": "What is React?",
+            "answers": [
+              { "text": "A JavaScript library for building user interfaces", "isCorrect": true },
+              { "text": "A backend framework", "isCorrect": false },
+              { "text": "A programming language", "isCorrect": false },
+              { "text": "A CSS framework", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is a component in React?",
+            "answers": [
+              { "text": "A piece of UI", "isCorrect": true },
+              { "text": "A database", "isCorrect": false },
+              { "text": "A function that returns a string", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What does JSX stand for?",
+            "answers": [
+              { "text": "JavaScript XML", "isCorrect": true },
+              { "text": "Java Syntax Extension", "isCorrect": false },
+              { "text": "JavaScript Extension", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of state in React?",
+            "answers": [
+              { "text": "To manage data in a component", "isCorrect": true },
+              { "text": "To style components", "isCorrect": false },
+              { "text": "To store global variables", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "How do you create a class component in React?",
+            "answers": [
+              { "text": "class MyComponent extends React.Component {}", "isCorrect": true },
+              { "text": "function MyComponent() {}", "isCorrect": false },
+              { "text": "const MyComponent = () => {}", "isCorrect": false },
+              { "text": "React.createComponent(MyComponent) {}", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is a pure component?",
+            "answers": [
+              { "text": "A component that does not re-render", "isCorrect": false },
+              { "text": "A component that returns the same output given the same input", "isCorrect": true },
+              { "text": "A component that uses state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What are props in React?",
+            "answers": [
+              { "text": "Properties passed to components", "isCorrect": true },
+              { "text": "A type of state", "isCorrect": false },
+              { "text": "A method for styling", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of the useEffect hook?",
+            "answers": [
+              { "text": "To manage state", "isCorrect": false },
+              { "text": "To perform side effects in function components", "isCorrect": true },
+              { "text": "To create class components", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is a higher-order component?",
+            "answers": [
+              { "text": "A component that renders another component", "isCorrect": true },
+              { "text": "A component that uses hooks", "isCorrect": false },
+              { "text": "A component that has state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What does the key prop do in React?",
+            "answers": [
+              { "text": "Identifies elements in a list for reconciliation", "isCorrect": true },
+              { "text": "Styles components", "isCorrect": false },
+              { "text": "Creates new components", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of React Router?",
+            "answers": [
+              { "text": "To manage routes in a React application", "isCorrect": true },
+              { "text": "To handle state management", "isCorrect": false },
+              { "text": "To style components", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What does the useState hook do?",
+            "answers": [
+              { "text": "Creates a state variable in a functional component", "isCorrect": true },
+              { "text": "Updates state in class components", "isCorrect": false },
+              { "text": "Removes state variables", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "How can you prevent a component from re-rendering?",
+            "answers": [
+              { "text": "By using React.memo", "isCorrect": true },
+              { "text": "By using setState", "isCorrect": false },
+              { "text": "By using useEffect", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is context in React?",
+            "answers": [
+              { "text": "A way to share values between components without props", "isCorrect": true },
+              { "text": "A method for styling", "isCorrect": false },
+              { "text": "A type of state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of the render prop pattern?",
+            "answers": [
+              { "text": "To pass props to components", "isCorrect": false },
+              { "text": "To share code between components", "isCorrect": true },
+              { "text": "To style components", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "How can you optimize performance in a React app?",
+            "answers": [
+              { "text": "By using shouldComponentUpdate", "isCorrect": true },
+              { "text": "By using inline styles", "isCorrect": false },
+              { "text": "By removing all state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is a fragment in React?",
+            "answers": [
+              { "text": "A way to group multiple elements without adding extra nodes", "isCorrect": true },
+              { "text": "A type of component", "isCorrect": false },
+              { "text": "A method for styling", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of the componentDidMount lifecycle method?",
+            "answers": [
+              { "text": "To fetch data after a component mounts", "isCorrect": true },
+              { "text": "To render the component", "isCorrect": false },
+              { "text": "To update the state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What does the useCallback hook do?",
+            "answers": [
+              { "text": "Returns a memoized version of a callback function", "isCorrect": true },
+              { "text": "Creates a new function on every render", "isCorrect": false },
+              { "text": "Updates the state", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is lazy loading in React?",
+            "answers": [
+              { "text": "Loading components only when they are needed", "isCorrect": true },
+              { "text": "Loading all components at once", "isCorrect": false },
+              { "text": "Preloading all assets", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]
+          },
+          {
+            "question": "What is the purpose of the useRef hook?",
+            "answers": [
+              { "text": "To create mutable object references", "isCorrect": true },
+              { "text": "To manage state", "isCorrect": false },
+              { "text": "To manage props", "isCorrect": false },
+              { "text": "None of the above", "isCorrect": false }
+            ]}
+     ],
+    "agile": [
+    {
+      "question": "Qu'est-ce que la méthodologie Agile?",
+      "answers": [
+        { "text": "Une méthode de développement logiciel en cascade", "isCorrect": false },
+        { "text": "Une méthode itérative et incrémentale de gestion de projet", "isCorrect": true },
+        { "text": "Un langage de programmation", "isCorrect": false },
+        { "text": "Une technique de brainstorming", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel est le but principal de la méthodologie Agile?",
+      "answers": [
+        { "text": "Planifier tous les détails du projet à l'avance", "isCorrect": false },
+        { "text": "Livrer rapidement de la valeur au client", "isCorrect": true },
+        { "text": "Minimiser la communication avec le client", "isCorrect": false },
+        { "text": "Automatiser toutes les tâches", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quelle est la durée typique d'un sprint en Scrum?",
+      "answers": [
+        { "text": "1 jour", "isCorrect": false },
+        { "text": "1 semaine", "isCorrect": false },
+        { "text": "2 à 4 semaines", "isCorrect": true },
+        { "text": "3 mois", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel rôle est responsable de maximiser la valeur du produit en Scrum?",
+      "answers": [
+        { "text": "Le Scrum Master", "isCorrect": false },
+        { "text": "Le Développeur", "isCorrect": false },
+        { "text": "Le Product Owner", "isCorrect": true },
+        { "text": "Le Chef de Projet", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel est l'objectif d'une rétrospective Agile?",
+      "answers": [
+        { "text": "Planifier le prochain sprint", "isCorrect": false },
+        { "text": "Démontrer le travail terminé au client", "isCorrect": false },
+        { "text": "Améliorer les processus et la collaboration de l'équipe", "isCorrect": true },
+        { "text": "Évaluer les performances individuelles", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Que signifie le terme 'backlog' en Scrum?",
+      "answers": [
+        { "text": "La liste des tâches en retard", "isCorrect": false },
+        { "text": "Une liste des fonctionnalités et exigences du produit", "isCorrect": true },
+        { "text": "Une réunion de planification", "isCorrect": false },
+        { "text": "Un document de spécifications", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Dans Agile, qu'est-ce qu'un 'increment'?",
+      "answers": [
+        { "text": "Un changement de plan", "isCorrect": false },
+        { "text": "Un ajout de fonctionnalités", "isCorrect": true },
+        { "text": "Une réunion de l'équipe", "isCorrect": false },
+        { "text": "Un document de référence", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel terme décrit l'engagement pris par l'équipe pour livrer un ensemble de fonctionnalités?",
+      "answers": [
+        { "text": "L'increment", "isCorrect": false },
+        { "text": "Le sprint backlog", "isCorrect": true },
+        { "text": "La roadmap", "isCorrect": false },
+        { "text": "Le plan de projet", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel est le rôle du Scrum Master dans une équipe Agile?",
+      "answers": [
+        { "text": "Assurer la livraison technique", "isCorrect": false },
+        { "text": "Faciliter les cérémonies Scrum et résoudre les obstacles", "isCorrect": true },
+        { "text": "Valider les tâches techniques", "isCorrect": false },
+        { "text": "Évaluer les performances individuelles", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quelle est la principale différence entre Agile et la méthode en cascade?",
+      "answers": [
+        { "text": "La cascade est plus rapide", "isCorrect": false },
+        { "text": "Agile est flexible et permet des itérations fréquentes", "isCorrect": true },
+        { "text": "La cascade est utilisée uniquement dans les grands projets", "isCorrect": false },
+        { "text": "Agile ne permet pas de revoir les spécifications", "isCorrect": false }
+      ]
+    },{
+      "question": "Quel artefact Scrum contient les tâches que l'équipe s'engage à réaliser dans le sprint?",
+      "answers": [
+        { "text": "Le product backlog", "isCorrect": false },
+        { "text": "Le sprint backlog", "isCorrect": true },
+        { "text": "L'increment", "isCorrect": false },
+        { "text": "La roadmap", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quelle est la fréquence recommandée pour les réunions de stand-up en Scrum?",
+      "answers": [
+        { "text": "Quotidienne", "isCorrect": true },
+        { "text": "Hebdomadaire", "isCorrect": false },
+        { "text": "Mensuelle", "isCorrect": false },
+        { "text": "À chaque fin de sprint", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel est le rôle principal de l'équipe de développement dans Scrum?",
+      "answers": [
+        { "text": "S'assurer de la satisfaction du client", "isCorrect": false },
+        { "text": "Concevoir et développer les fonctionnalités du produit", "isCorrect": true },
+        { "text": "Gérer le backlog produit", "isCorrect": false },
+        { "text": "Organiser les réunions de sprint", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une User Story en Agile?",
+      "answers": [
+        { "text": "Une description de fonctionnalité du point de vue de l'utilisateur", "isCorrect": true },
+        { "text": "Un bug à corriger", "isCorrect": false },
+        { "text": "Une tâche technique", "isCorrect": false },
+        { "text": "Une réunion de planification", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel document en Scrum représente l'objectif final du sprint?",
+      "answers": [
+        { "text": "Le backlog produit", "isCorrect": false },
+        { "text": "Le sprint goal", "isCorrect": true },
+        { "text": "Le sprint backlog", "isCorrect": false },
+        { "text": "Le daily Scrum", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Que signifie le terme 'increment' dans Scrum?",
+      "answers": [
+        { "text": "La totalité des fonctionnalités ajoutées au produit", "isCorrect": true },
+        { "text": "Un ensemble de tâches dans le sprint", "isCorrect": false },
+        { "text": "Un rapport de sprint", "isCorrect": false },
+        { "text": "Une phase de planification", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quand une user story est-elle considérée comme terminée en Scrum?",
+      "answers": [
+        { "text": "Lorsqu'elle est développée", "isCorrect": false },
+        { "text": "Lorsqu'elle passe le critère de 'Definition of Done'", "isCorrect": true },
+        { "text": "Lorsqu'elle est assignée", "isCorrect": false },
+        { "text": "Lorsqu'elle est priorisée", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quelle est la durée d'une itération dans la méthode Kanban?",
+      "answers": [
+        { "text": "2 semaines", "isCorrect": false },
+        { "text": "1 mois", "isCorrect": false },
+        { "text": "Il n'y a pas de durée fixe", "isCorrect": true },
+        { "text": "6 mois", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Quel terme en Agile signifie une amélioration continue des processus?",
+      "answers": [
+        { "text": "Kanban", "isCorrect": false },
+        { "text": "Kaizen", "isCorrect": true },
+        { "text": "Scrum", "isCorrect": false },
+        { "text": "User Story", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Dans la méthodologie Agile, quel artefact est utilisé pour décrire le travail restant à réaliser?",
+      "answers": [
+        { "text": "Le Product Backlog", "isCorrect": true },
+        { "text": "Le Sprint Backlog", "isCorrect": false },
+        { "text": "Le Daily Scrum", "isCorrect": false },
+        { "text": "La Definition of Done", "isCorrect": false }
+      ]
+    }
+  ] }      
+     
+     
+     
